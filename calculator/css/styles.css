@@ -1,0 +1,131 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    .calculator {
+      width: 320px;
+      padding: 20px;
+      border-radius: 16px;
+      background: #26263a;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .page {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .info-card {
+      width: 260px;
+      padding: 24px 20px;
+      border-radius: 16px;
+      background: #f5f5f7;
+      border: 1px solid #ddd;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-card h2 {
+      margin: 0 0 16px;
+      font-size: 18px;
+      color: #26263a;
+    }
+
+    .info-field {
+      margin-bottom: 16px;
+    }
+
+    .info-label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #777;
+      margin-bottom: 4px;
+    }
+
+    .info-value {
+      min-height: 28px;
+      border-bottom: 1px solid #bbb;
+    }
+
+    .display {
+      background: #14141f;
+      color: #fff;
+      border-radius: 10px;
+      padding: 20px 16px;
+      margin-bottom: 16px;
+      text-align: right;
+      overflow: hidden;
+    }
+
+    .display .previous {
+      min-height: 20px;
+      font-size: 14px;
+      color: #9a9ab0;
+    }
+
+    .display .current {
+      font-size: 32px;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    button {
+      border: none;
+      border-radius: 10px;
+      padding: 18px 0;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #fff;
+      transition: filter 0.15s ease, transform 0.05s ease;
+    }
+
+    button:hover {
+      filter: brightness(1.15);
+    }
+
+    button:active {
+      transform: scale(0.96);
+    }
+
+    /* Number buttons */
+    .btn-number {
+      background: #3d3d56;
+    }
+
+    /* Clear / delete buttons */
+    .btn-clear {
+      background: #e74c3c;
+    }
+
+    /* Operator buttons (+ - * /) */
+    .btn-operator {
+      background: #f39c12;
+    }
+
+    /* Equals button */
+    .btn-equals {
+      background: #2ecc71;
+    }
+
+    /* Zero spans two columns */
+    .btn-zero {
+      grid-column: span 2;
+    }

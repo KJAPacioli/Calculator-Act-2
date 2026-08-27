@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+  <div class="page">
+    <div class="calculator">
+      <div class="display">
+        <div class="previous" id="previous-operand"></div>
+        <div class="current" id="current-operand">0</div>
+      </div>
+      <div class="buttons">
+        <button class="btn-clear" data-action="clear">AC</button>
+        <button class="btn-clear" data-action="delete">DEL</button>
+        <button class="btn-operator" data-action="percent">%</button>
+        <button class="btn-operator" data-action="operator" data-value="/">÷</button>
+
+        <button class="btn-number" data-number="7">7</button>
+        <button class="btn-number" data-number="8">8</button>
+        <button class="btn-number" data-number="9">9</button>
+        <button class="btn-operator" data-action="operator" data-value="*">×</button>
+
+        <button class="btn-number" data-number="4">4</button>
+        <button class="btn-number" data-number="5">5</button>
+        <button class="btn-number" data-number="6">6</button>
+        <button class="btn-operator" data-action="operator" data-value="-">−</button>
+
+        <button class="btn-number" data-number="1">1</button>
+        <button class="btn-number" data-number="2">2</button>
+        <button class="btn-number" data-number="3">3</button>
+        <button class="btn-operator" data-action="operator" data-value="+">+</button>
+
+        <button class="btn-number btn-zero" data-number="0">0</button>
+        <button class="btn-number" data-number=".">.</button>
+        <button class="btn-equals" data-action="equals">=</button>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h2>Submission Details</h2>
+      <div class="info-field">
+        <span class="info-label">Name</span>
+        <div class="info-value"><strong> Piñero, Khryzl Jacob A.</strong></div>
+      </div>
+      <div class="info-field">
+        <span class="info-label">Course and Block</span>
+        <div class="info-value"><strong>BSIT-3B </strong></div>
+      </div>
+      <div class="info-field">
+        <span class="info-label">Classcode/Subject Code</span>
+        <div class="info-value"><strong>ITP313L</strong></div>
+      </div>
+    </div>
+  </div>
+ <script src="js/script.js"></script>
+</body>
+
+</html>
